@@ -1,0 +1,12 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+.img-container  {
+    background: #03989E;
+    height: 1000px;
+}
+.img-amara-cedrus {
+    height: 500px;
+}
