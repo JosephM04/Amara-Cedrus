@@ -64,15 +64,27 @@ h1 {
     font-size: 12px;
 }
 
+@media screen and (min-width:420px ) {
+
+    .img-producto { 
+        height: 18rem;
+    }
+    .img-producto:hover {
+        height: 19rem;
+        width: 100%;
+    }
+    .texto-producto { font-size: 16px; }
+}
+
 @media screen and (min-width:600px ) {
     .cont-producto {
         flex-direction: row;
-        width: 90%;
+        width: 95%;
     }
 
     .img-producto { 
         height: 18rem;
-        width: 90%; 
+        width: 95%; 
     }
     .img-producto:hover {
         height: 19rem;
@@ -89,17 +101,27 @@ h1 {
     .texto-producto { font-size: 17px; }
 }
 
+@media screen and (min-width:1440px ) {
+    .img-producto { 
+        height: 23rem;
+        width: 95%; 
+    }
+    .img-producto:hover {
+        height: 25rem;
+    }
+}
+
 
 @media screen and (min-width:2500px ) {
     .box {
         width: 80%;
     }
     .img-producto { 
-        height: 30rem;
+        height: 33rem;
         width: 97%; 
     }
     .img-producto:hover {
-        height: 33rem;
+        height: 36rem;
         width: 100%;
     }
     .texto-producto { font-size: 25px; }
