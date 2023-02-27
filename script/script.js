@@ -12,5 +12,12 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+  setTimeout(showSlides, 3500); // cambia la imagen cada 3.5
 }
+
+let loader = document.querySelector(".loader-cont");
+
+window.addEventListener("load", function(event) {
+  loader.style.display = "none";
+});
+
