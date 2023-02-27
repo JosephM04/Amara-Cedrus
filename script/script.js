@@ -1,4 +1,4 @@
-
+"use strict"
 // slides para imagenes de la pagina principal
 let slideIndex = 0;
 showSlides();
@@ -16,8 +16,5 @@ function showSlides() {
 }
 
 let loader = document.querySelector(".loader-cont");
-
-window.addEventListener("load", function(event) {
-  loader.style.display = "none";
-});
+window.addEventListener("load", () => loader.style.display = "none");
 
