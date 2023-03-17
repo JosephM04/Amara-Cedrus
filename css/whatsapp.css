@@ -4,26 +4,23 @@
     box-sizing: border-box;
 }
 
-.whatsapp-cont {
-    position:fixed;
-    display:flex;
-    justify-content: end;
-    right: 0;
-    bottom:0;
-    margin: 5px;
-    width: 80%;
-    height: auto;
-}
 .ws-confirmar {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+    justify-content: end;
     padding:3px;
-    width: 80%;
-    z-index:300;
+    z-index:100;
     border-radius:10px;
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     transform: translateX(200%);
-    transition: transform 0.4s ease;
+    transition: all 0.3s ease;
     box-shadow: 0 0 10px #222;
+}
 
+.ws-confirmar>p {
+    margin:8px;
 }
 
 .ws-cont-show {
@@ -32,7 +29,8 @@
 
 .btn-ws-cont {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     font-size: 5px;
     background: transparent;
 }
@@ -40,12 +38,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 25px;
+    width: 50px;
+    height: 30px;
     margin: 3px 10px;
     background-color: transparent;
     border:1px solid #aaa;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .btn-ws-confirmar {
     text-decoration: none;
@@ -68,18 +67,22 @@
     color: #500;
 }
 .whatsapp {
+    position: fixed;
     display: flex;
     justify-content:center ;
     align-items: center;
-    width: 20%;
-    height: auto;
-    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    right: 0;
+    bottom: 0;
+
 }
 
 .bxl-whatsapp {
     margin: 5px;
     padding: 5px;
-    font-size: 40px;
+    font-size: 25px;
     border-radius: 50%;
     background: #1BD741;
     color: #ddd;

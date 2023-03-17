@@ -1,4 +1,13 @@
 "use strict"
+// loader que aparecerá hasta que carge la primera imagen
+
+
+let loader = document.querySelector(".loader-cont");
+
+window.addEventListener("load", () => {
+  loader.style.display = "none";
+});
+
 // slides para imagenes de la pagina principal
 let slideIndex = 0;
 showSlides();
@@ -15,6 +24,5 @@ function showSlides() {
   setTimeout(showSlides, 3500); // cambia la imagen cada 3.5
 }
 
-let loader = document.querySelector(".loader-cont");
-window.addEventListener("load", () => loader.style.display = "none");
+
 
