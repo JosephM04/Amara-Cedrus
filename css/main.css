@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* loader */
@@ -72,7 +74,6 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-
 }
 
 .h1-cont {
@@ -86,21 +87,16 @@ body {
     text-decoration: none;
 }
 
-/* .h1-cont a:hover {
-    border-radius: 10px;
-    border-bottom: 1px solid #ddd;
-} */
-
 .h1-cont h1,
 h2 {
     font-weight: 150;
-    font-size: 15px;
+    font-size: 1.6rem;
     margin: 0 5px;
     color: #f2f2f2;
 }
 
 .h1-cont h2 {
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .img-logo {
@@ -134,11 +130,19 @@ h2 {
     background-color: #ffe0c8;
 }
 
- .h2 {
-  font-size: 23px;
-  margin: 20px;
-  color:#111;
-  text-align:center;
+.h2 {
+    font-size: 1.7rem;
+    margin: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.h2-tittles {
+    font-size: 1.7rem;
+    padding: 20px;
+    color: #111;
+    text-align: center;
+    border-top: 1px solid #111;
 }
 
 .descripcion {
@@ -154,7 +158,7 @@ h2 {
     width: 90%;
     max-width: 800px;
     font-weight: 300;
-  }
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -205,11 +209,73 @@ h2 {
     height: auto;
 }
 
+.box-cont {
+    width: 100%;
+}
+
+.box {
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-200%);
+    transition: transform 0.4s ease-out;
+    margin-bottom: 10px;
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.cont-producto {
+    margin: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: height 1s ease;
+}
+
+.img-producto {
+    /* margin: 10px; */
+    height: 15rem;
+    width: 95%;
+    max-width: 95%;
+    border: 1px solid #222;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-producto img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.img-producto>img:hover {
+    transform: scale(1.2);
+}
+
+.texto-producto {
+    text-align: justify;
+    border-radius: 5px;
+    padding: 15px;
+    width: 95%;
+    height: auto;
+    font-size: 12px;
+}
+
 /* Footer */
 
 .footer {
     box-shadow: 0 0 5px #03989E;
-    background-color:#D6EAF8;
+    background-color: #D6EAF8;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -220,7 +286,7 @@ h2 {
 
 .footer-cont {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -241,9 +307,8 @@ h2 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1); */
     display: grid;
     place-items: center;
-    font-size: 15px;
+    font-size: 1.2rem;
     color: #111;
-    padding: 10px;
 }
 
 .ig-a:hover {
@@ -251,11 +316,19 @@ h2 {
 }
 
 .creado-por {
-    margin-top: 20px;
+    margin: 20px 0;
     width: 100%;
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.creado-por-link {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#03989E;
 }
 
 #email {
@@ -268,9 +341,137 @@ h2 {
     text-decoration: underline;
 }
 
+
+/* Whatsapp icon */
+.ws-confirmar {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    display: flex;
+    justify-content: end;
+    padding:3px;
+    z-index:100;
+    border-radius:10px;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    transform: translateX(200%);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #222;
+}
+
+.ws-confirmar>p {
+    margin:8px;
+}
+
+.ws-cont-show {
+    transform: translateX(0);
+}
+
+.btn-ws-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+    background: transparent;
+}
+.btn-ws {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    margin: 3px 10px;
+    background-color: transparent;
+    border:1px solid #aaa;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn-ws-confirmar {
+    text-decoration: none;
+}
+
+.btn-ws:hover {
+    background: #dee;
+    cursor:pointer;
+}
+
+
+.bx-confirmar{
+    color: #1BD741;
+}
+.bx-confirmar:hover{
+    color: #1BD741;
+}
+
+.bx-cancel{
+    color: #500;
+}
+.whatsapp {
+    position: fixed;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    right: 0;
+    bottom: 0;
+
+}
+
+.bxl-whatsapp {
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 50%;
+    background: #1BD741;
+    color: #ddd;
+    z-index: 301;
+}
+
+.bxl-whatsapp:hover {
+    box-shadow: 0 0 7px #0d0;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width:420px) {
+
+    .img-producto {
+        height: 18rem;
+    }
+
+    .img-producto:hover {
+        height: 19rem;
+        width: 100%;
+    }
+
+    .texto-producto {
+        font-size: 16px;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .slideshow-container {
         height: 450px;
+    }
+
+    .cont-producto {
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .img-producto {
+        height: 18rem;
+        width: 95%;
+    }
+
+    .img-producto:hover {
+        height: 19rem;
+        width: 100%;
+    }
+
+    .texto-producto {
+        font-size: 16px;
     }
 }
 
@@ -278,10 +479,48 @@ h2 {
     .slideshow-container {
         height: 550px;
     }
+
+    .box {
+        width: 80%;
+        margin: auto;
+    }
+
+    .texto-producto {
+        font-size: 17px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .slideshow-container {
         height: 650px;
+    }
+
+    .img-producto {
+        height: 23rem;
+        width: 95%;
+    }
+
+    .img-producto:hover {
+        height: 25rem;
+    }
+}
+
+@media screen and (min-width:2500px) {
+    .box {
+        width: 80%;
+    }
+
+    .img-producto {
+        height: 33rem;
+        width: 97%;
+    }
+
+    .img-producto:hover {
+        height: 36rem;
+        width: 100%;
+    }
+
+    .texto-producto {
+        font-size: 25px;
     }
 }
