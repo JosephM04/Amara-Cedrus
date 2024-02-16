@@ -147,33 +147,31 @@ h2 {
 }
 
 .h2-tittles {
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 10px;
-    color: #333;
+    color: #000;
     text-align: center;
-    border-top: 1px solid #222;
+    font-weight: bold;
 }
 .h3-tittles {
-    font-size: 1.4rem;
+    font-size: .9rem;
+    font-weight: 700;
     padding: 10px;
     color: #333;
     text-align: center;
-    border-top: 1px solid #222;
 }
 
 .descripcion {
     background-color: #f8f8f8;
-    border: 2px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 1rem;
     text-align: center;
     margin: 20px auto;
     width: 90%;
-    max-width: 800px;
-    font-weight: 300;
+    /* max-width: 800px; */
 }
 
 /* Slideshow container */
@@ -327,19 +325,18 @@ h2 {
 }
 
 .cont-producto {
-    margin: 15px 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 5px;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
     width: 90vw;
     transition: height 1s ease;
 }
 
 .img-producto {
-    height: 15rem;
-    width: 95%;
-    max-width: 500px;
+    max-height:150px;
+    max-width: 220px;
     border: 1px solid #222;
     border-radius: 20px;
     overflow: hidden;
