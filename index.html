@@ -4,40 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/whatsapp.css" />
-    <link rel="stylesheet" href="css/productos.css" />
+    <link rel="stylesheet" href="css/main.css" /> <!-- main css for all pages-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate on scrolll library-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap"
+      rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+      rel="stylesheet" /> <!-- box icons pack-->
     <link rel="shortcut icon" href="logo/logo.png" />
     <title>Amara Cedrus</title>
   </head>
 
   <body>
+    <!-- Window while the page is loading-->
     <div class="loader-cont" id="loader-cont">
       <img
         class="img-loader"
         src="images/amaracedrushorizontal.png"
-        alt="Amara Cedrus Cooking Lab"
-      />
+        alt="Amara Cedrus Cooking Lab" />
       <div class="loader"></div>
     </div>
+
+    <!-- Header -->
     <header>
       <div class="logo-container">
         <a class="nav-a" href="index.html">
           <img
             class="img-logo"
             src="images/amaracedrushorizontal.png"
-            alt="Amara Cedrus Cooking Lab"
-        /></a>
+            alt="Amara Cedrus Cooking Lab" /></a>
         <div class="h1-cont">
           <a href="index.html">
             <h1>Amara Cedrus</h1>
@@ -45,10 +46,12 @@
           </a>
         </div>
       </div>
+      <!-- Navigation bar-->
       <!-- <nav class="nav"> -->
       <div class="nav-container">
-        <!-- <a class="nav-a nav-a-links" href="productos.html"></a> -->
-        <!-- <a class="nav-a nav-a-links" href="contacto.html">Contacto</a> -->
+        <a class="nav-a nav-a-links" href="index.html">Inicio</a>
+        <a class="nav-a nav-a-links" href="menu.html">Menú</a>
+        <a class="nav-a nav-a-links" href="nosotros.html">Nosotros</a>
       </div>
       <!-- </nav> -->
     </header>
@@ -56,15 +59,14 @@
     <!-- Slideshow container -->
 
     <div class="main-container">
-      <h2 class="h2">El sabor que nunca olvidarás</h2>
+
+      <!-- Slideshow animation  -->
       <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <img
             id="slide-img1"
             src="images/slideprincipal/img1.jpg"
-            tittle="amara cedrus Box"
-          />
+            tittle="amara cedrus Box" />
           <div class="text"></div>
         </div>
 
@@ -77,9 +79,11 @@
         </div>
 
         <div class="mySlides fade">
-          <img src="images/slideprincipal/img4.jpg" tittle="rollos de canela" />
+          <img src="images/slideprincipal/img4.jpeg"
+            tittle="rollos de canela" />
         </div>
       </div>
+      <h2 class="h2">El sabor que nunca olvidarás</h2>
       <p class="descripcion">
         Entra en un mundo de sabores irresistibles y texturas suaves con
         nuestros postres que te transportarán a un paraíso de dulzura. Cada
@@ -89,110 +93,50 @@
         sabor más delicioso.
       </p>
     </div>
+    <!-- Parallax effect -->
+    <div class="img-parallax"></div>
 
-    <h2 class="h2-tittles">Nuestros Postres</h2>
-    <div class="box-cont">
-      <div class="box ">
-          <div class="cont-producto">
-              <div class="img-producto">
-                <img src="images/slideprincipal/img3.jpg" tittle="Bitter Cidar" />
-              </div>
-              <div class="texto-producto">
-                  <h2 class="h2-tittles">Bitter Cidar </h2>
-                  <p>Las galletas Bitter Cidar son una excelente opción para aquellos que buscan algo diferente a las típicas galletas dulces. Su sabor distintivo las hace perfectas para una variedad de ocasiones, desde una merienda rápida hasta un postre elegante. Pruébalas y experimenta su sabor único por ti mismo.</p>
-              </div>
-          </div>
+    <div class="info-main">
+
+      <div class="info-div">
+        <h3>Dirección</h3>
+        <p>555-3 Doleguita St. <br> David, CH</p>
+        <a class="mapa" target="_blank"
+          href="https://www.bing.com/maps?osid=04cff7bb-15f0-4a5b-a7b8-c8371596ba20&cp=8.43818~-82.429583&lvl=16&pi=0&imgid=fd4da327-f333-4e7f-953f-75141dfa2f73&v=2&sV=2&form=S00027">Cómo
+          llegar</a>
       </div>
-      <div class="box">
-          <div class="cont-producto">
-              <div class="img-producto">
-                  <img src="images/slideprincipal/img4.jpg" alt="Rollos de Canela - Cinnamon Rolls">
-              </div>
-              <div class="texto-producto">
-                  <h2 class="h2-tittles">Cinnamon Dreds </h2>
-                  <p>¡Los cinnamon rolls son una deliciosa tentación para los amantes de los postres dulces! Con su aroma a canela dulce que llena la casa y su suave textura que se deshace en la boca. ¡No hay nada mejor que un cinnamon roll casero y fresco para satisfacer tus antojos de dulces! </p>
-              </div>
-          </div>
+
+      <div class="info-div">
+        <h3>Horarios</h3>
+        <p>
+          <strong> Lunes a Sabados </strong> <br>
+          7am - 7pm
+        </p>
+        <p>
+          <strong> Domingos </strong> <br>
+          9am - 5pm
+        </p>
       </div>
-      <div class="box ">
-          <div class="cont-producto">
-              <div class="img-producto">
-                  <img class="cheescake" src="images/Cheescake.png" alt="Cheesecake de café, chocolate y licor de amaretto">
-              </div>
-              <div class="texto-producto">
-                  <h2 class="h2-tittles">Cheesecake de café, chocolate y licor de amaretto. </h2>
-                  <p>Deléitate con nuestro exquisito cheesecake de café con toques de chocolate y un toque de licor de amaretto. Cada bocado es una experiencia única de sabores intensos y delicados que te transportará a otro nivel de placer culinario. Perfecto para compartir o para disfrutar en solitario, ¡no te arrepentirás de probarlo!</p>
-              </div>
-          </div>
+
+      <div class="info-div">
+        <h3>Contacto</h3>
+        <a class="contact-a" href="tel:+5588899911122">+55 888 - 999 111 22</a>
+        <a class="contact-a" href=mailto:agentavery@sample.com>
+          agentavery@sample.com </a>
       </div>
-      <div class="box ">
-          <div class="cont-producto">
-              <div class="img-producto">
-                  <img class="tartas" src="images/tartas.jpg" alt="Mini Tartas caseras">
-              </div>
-              <div class="texto-producto">
-                  <h2 class="h2-tittles">Tartas</h2>
-                  <p>Tartas caseras deliciosas y recién horneadas. Amplia variedad de sabores y tamaños para satisfacer cualquier antojo dulce. Perfectas para celebraciones o simplemente para darse un capricho.<br><br>
-                  Sabores: Maracuya Cream Chocolate White y
-                  Lime Merengue Italiano
-                  </p>
-              </div>
-          </div>
-      </div>
-      <!-- <div class="box ">
-              <div class="cont-producto">
-                  <div class="img-producto">
-                      <img src="" alt="">
-                  </div>
-                  <div class="texto-producto">
-                      <h2 class="h2-tittles">Titulo </h2>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae porro vero, magni quas velit similique magnam et sapiente necessitatibus reprehenderit nobis a eveniet suscipit assumenda neque ipsam dolor non repellat, accusamus alias nisi quisquam quidem. Corrupti neque dignissimos quia ea enim ex, quam at eligendi quod? Aspernatur vitae reprehenderit dolore?</p>
-                  </div>
-              </div>
-      </div>
-      <div class="box">
-          <div class="cont-producto">
-              <div class="img-producto">
-                  <img src="" alt="">
-              </div>
-              <div class="texto-producto">
-                  <h2 class="h2-tittles">Titulo </h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae porro vero, magni quas velit similique magnam et sapiente necessitatibus reprehenderit nobis a eveniet suscipit assumenda neque ipsam dolor non repellat, accusamus alias nisi quisquam quidem. Corrupti neque dignissimos quia ea enim ex, quam at eligendi quod? Aspernatur vitae reprehenderit dolore?</p>
-              </div>
-          </div>
-      </div> -->
-      <!-- <div class="box">
-          <div class="cont-producto">
-              <div class="img-producto">
-                  <img src="" alt="">
-              </div>
-              <div class="texto-producto">
-                  <h2>Titulo </h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae porro vero, magni quas velit similique magnam et sapiente necessitatibus reprehenderit nobis a eveniet suscipit assumenda neque ipsam dolor non repellat, accusamus alias nisi quisquam quidem. Corrupti neque dignissimos quia ea enim ex, quam at eligendi quod? Aspernatur vitae reprehenderit dolore?</p>
-              </div>
-          </div>
-      </div>
-      <div class="box">
-          <div class="cont-producto">
-              <div class="img-producto">
-                  <img src="" alt="">
-              </div>
-              <div class="texto-producto">
-                  <h2>Titulo </h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae porro vero, magni quas velit similique magnam et sapiente necessitatibus reprehenderit nobis a eveniet suscipit assumenda neque ipsam dolor non repellat, accusamus alias nisi quisquam quidem. Corrupti neque dignissimos quia ea enim ex, quam at eligendi quod? Aspernatur vitae reprehenderit dolore?</p>
-              </div>
-          </div>
-      </div>
-   -->
+
+    </div>
+    <div class="menu">
+      <a  href="menu.html">Ver menu</a>
+    </div>
 
     <div class="ws-confirmar">
       <p>Hacer pedido desde whatsapp</p>
       <div class="btn-ws-cont">
         <a
           class="btn-ws btn-ws-confirmar"
-          href="https://wa.me/50761184042"
-          target="_blank"
-        >
+          href="https://wa.me/"
+          target="_blank">
           <i class="bx-confirmar bx bx-check"></i>
         </a>
         <button class="btn-ws ws-x"><i class="bx-cancel bx bx-x"></i></button>
@@ -209,17 +153,14 @@
           <div class="instagram-ico">
             <img
               src="logo/instagram-logo.png"
-              alt="Logo instagram de https://boxicons.com/"
-            />
+              alt="Logo instagram de https://boxicons.com/" />
           </div>
           <a
             class="ig-a"
             href="https://www.instagram.com/amara.cedrus/"
             title="Ir al perfil de instagram"
             target="_blank"
-            tittle="Amara Cedrus instagram"
-            >Amara Cedrus</a
-          >
+            tittle="Amara Cedrus instagram">Amara Cedrus</a>
         </div>
         <!-- <div>
                 <p id="pemail">Email: <a id="email" href = "mailto: email" title="Click para enviar un email">email@email.com</a></p>
@@ -227,10 +168,16 @@
       </div>
 
       <div class="creado-por">
-        <i>© Creado por <a class="creado-por-link" href="https://josephmendezportfolio.netlify.app/">Joseph Méndez</a>.</i>
+        <i>© Creado por <a class="creado-por-link"
+            href="https://josephmendezportfolio.netlify.app/">Joseph
+            Méndez</a>.</i>
       </div>
     </div>
 
     <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
