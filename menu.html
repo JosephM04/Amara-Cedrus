@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/menu.css" />
         <!-- main css for all pages-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,7 +18,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet" /> <!-- box icons pack-->
         <link rel="shortcut icon" href="logo/logo.png" />
-        <title>Menú</title>
+        <title>Menu</title>
     </head>
     <body>
         <div class="loader-cont" id="loader-cont">
@@ -47,7 +48,7 @@
             <!-- <nav class="nav"> -->
             <div class="nav-container">
                 <a class="nav-a nav-a-links" href="index.html">Inicio</a>
-                <a class="nav-a nav-a-links" href="menu.html">Menú</a>
+                <a class="nav-a nav-a-links" href="menu.html">Menu</a>
                 <a class="nav-a nav-a-links" href="nosotros.html">Nosotros</a>
             </div>
             <!-- </nav> -->
@@ -56,71 +57,174 @@
         <!-- Slideshow container -->
 
         <div class="main-container">
+          <div class="menu-div-btn">
+            <button class="menu-btn btn-brunch">Brunch</button>
+            <button class="menu-btn btn-cena">Cena</button>
+            <button class="menu-btn btn-bebidas">Bebidas</button>
+            <button class="menu-btn btn-postres">Postres</button>
+          </div>  
+         
 
-            <h2 h2 class="h2-tittles">Postres</h2>
-            <div class="box-cont">
-                <div class="box" data-aos="fade-down">
-                    <div class="cont-producto">
-                        <div class="img-producto">
-                            <img src="images/slideprincipal/img3.jpg"
-                                tittle="Bitter Cidar" />
+            <div class="menu" id="menu-brunch" class="menu">
+                <!-- Contenido del menú de desayuno -->
+                <h2 h2 class="h2-tittles">Brunch</h2>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img src="images/slideprincipal/img3.jpg"
+                                    tittle="Bitter Cidar" />
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Bitter Cidar </h3>
+                                <p>Las galletas Bitter Cidar son una excelente
+                                    opción para aquellos
+                                    que buscan algo diferente a las típicas
+                                    galletas
+                                    dulces. </p>
+                                <br><p style="text-align: end;">$3.99</p>
+                            </div>
                         </div>
-                        <div class="texto-producto">
-                            <h3 class="h3-tittles">Bitter Cidar </h3>
-                            <p>Las galletas Bitter Cidar son una excelente
-                                opción para aquellos
-                                que buscan algo diferente a las típicas galletas
-                                dulces. </p>
-                            <br><p>Precio: $3.99</p>
+                    </div>
+                    <div class="box">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img src="images/slideprincipal/img4.jpeg"
+                                    alt="Rollos de Canela - Cinnamon Rolls">
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Cinnamon Dreds </h3>
+                                <p>¡Los cinnamon rolls son una deliciosa
+                                    tentación
+                                    para los amantes
+                                    de los postres dulces! </p>
+                                <br><p style="text-align: end;">$3.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img class="cheescake"
+                                    src="images/Cheescake.png"
+                                    alt="Cheesecake de café, chocolate y licor de amaretto">
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Cheesecake de café
+                                    y licor de
+                                    amaretto. </h3>
+                                <p>Deléitate con nuestro exquisito cheesecake de
+                                    café con toques de
+                                    chocolate y un toque de licor de amaretto.
+                                </p>
+                                <br><p style="text-align: end;"> $3.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" data-aos="fade-down">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img class="tartas" src="images/tartas.jpg"
+                                    alt="Mini Tartas caseras">
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Tartas</h3>
+                                <p>Tartas caseras deliciosas y recién horneadas.
+                                    <br><br>
+                                    Sabores: Maracuya Cream Chocolate White y
+                                    Lime Merengue Italiano
+                                </p>
+                                <br><p style="text-align: end;">$3.99</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="box" data-aos="fade-down">
-                    <div class="cont-producto">
-                        <div class="img-producto">
-                            <img src="images/slideprincipal/img4.jpeg"
-                                alt="Rollos de Canela - Cinnamon Rolls">
-                        </div>
-                        <div class="texto-producto">
-                            <h3 class="h3-tittles">Cinnamon Dreds </h3>
-                            <p>¡Los cinnamon rolls son una deliciosa tentación
-                                para los amantes
-                                de los postres dulces! </p>
-                            <br><p>Precio: $3.99</p>
+            </div>
+
+            <div class="menu" id="menu-cena" class="menu" style="display:none;">
+                <!-- Contenido del menú de almuerzo -->
+                <p>Cena 1</p>
+                <p>Cena 2</p>
+            </div>
+
+            <div class="menu" id="menu-bebidas" class="menu"
+                style="display:none;">
+                <!-- Contenido del menú de cena -->
+                <p>bebida 1</p>
+                <p>bebida 2</p>
+            </div>
+
+            <div class="menu" id="menu-postres" class="menu"
+                style="display:none;">
+                <h2 h2 class="h2-tittles">Postres</h2>
+                <div class="box-cont">
+                    <div class="box">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img src="images/slideprincipal/img3.jpg"
+                                    tittle="Bitter Cidar" />
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Bitter Cidar </h3>
+                                <p>Las galletas Bitter Cidar son una excelente
+                                    opción para aquellos
+                                    que buscan algo diferente a las típicas
+                                    galletas
+                                    dulces. </p>
+                                <br><p style="text-align: end;">$3.99</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box" data-aos="fade-down">
-                    <div class="cont-producto">
-                        <div class="img-producto">
-                            <img class="cheescake" src="images/Cheescake.png"
-                                alt="Cheesecake de café, chocolate y licor de amaretto">
-                        </div>
-                        <div class="texto-producto">
-                            <h3 class="h3-tittles">Cheesecake de café
-                                y licor de
-                                amaretto. </h3>
-                            <p>Deléitate con nuestro exquisito cheesecake de
-                                café con toques de
-                                chocolate y un toque de licor de amaretto. </p>
-                            <br><p style="text-align: end;">Precio: $3.99</p>
+                    <div class="box">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img src="images/slideprincipal/img4.jpeg"
+                                    alt="Rollos de Canela - Cinnamon Rolls">
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Cinnamon Dreds </h3>
+                                <p>¡Los cinnamon rolls son una deliciosa
+                                    tentación
+                                    para los amantes
+                                    de los postres dulces! </p>
+                                <br><p style="text-align: end;">$3.99</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box" data-aos="fade-down">
-                    <div class="cont-producto">
-                        <div class="img-producto">
-                            <img class="tartas" src="images/tartas.jpg"
-                                alt="Mini Tartas caseras">
+                    <div class="box">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img class="cheescake"
+                                    src="images/Cheescake.png"
+                                    alt="Cheesecake de café, chocolate y licor de amaretto">
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Cheesecake de café
+                                    y licor de
+                                    amaretto. </h3>
+                                <p>Deléitate con nuestro exquisito cheesecake de
+                                    café con toques de
+                                    chocolate y un toque de licor de amaretto.
+                                </p>
+                                <br><p style="text-align: end;"> $3.99</p>
+                            </div>
                         </div>
-                        <div class="texto-producto">
-                            <h3 class="h3-tittles">Tartas</h3>
-                            <p>Tartas caseras deliciosas y recién horneadas.
-                                <br><br>
-                                Sabores: Maracuya Cream Chocolate White y
-                                Lime Merengue Italiano
-                            </p>
-                            <br><p style="text-align: end;">Precio: $3.99</p>
+                    </div>
+                    <div class="box" data-aos="fade-down">
+                        <div class="cont-producto">
+                            <div class="img-producto">
+                                <img class="tartas" src="images/tartas.jpg"
+                                    alt="Mini Tartas caseras">
+                            </div>
+                            <div class="texto-producto">
+                                <h3 class="h3-tittles">Tartas</h3>
+                                <p>Tartas caseras deliciosas y recién horneadas.
+                                    <br><br>
+                                    Sabores: Maracuya Cream Chocolate White y
+                                    Lime Merengue Italiano
+                                </p>
+                                <br><p style="text-align: end;">$3.99</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,6 +276,7 @@
             </div>
 
             <script src="script/script.js"></script>
+            <script src="script/menu.js"></script>
 
         </body>
     </html>

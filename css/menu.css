@@ -1,0 +1,26 @@
+.menu-div-btn {
+    position: sticky;
+    top: 03px;
+    width:100%;
+    margin: auto;
+    display: grid;
+    gap: 3px;
+    justify-content: center;
+    grid-template-columns:repeat(auto-fit, minmax(100px, 100px));
+    z-index: 0;
+}
+
+.menu-btn {
+    background-color: #03989E;
+    text-align: center;
+    color: #fff;
+    padding: 10px 20px;
+    /* max-width: 100px; */
+    margin-bottom: 50px;
+    border: none;
+}
+
+.menu-btn:hover {
+    background-color: #03a6ac;
+    cursor: pointer;
+}
