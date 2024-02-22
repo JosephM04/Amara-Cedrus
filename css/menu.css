@@ -1,10 +1,8 @@
 .menu-div-btn {
-    position: sticky;
-    top: 03px;
     width:100%;
-    margin: auto;
+    margin: 15px auto ;
     display: grid;
-    gap: 3px;
+    gap: 5px;
     justify-content: center;
     grid-template-columns:repeat(auto-fit, minmax(100px, 100px));
     z-index: 0;
@@ -15,8 +13,7 @@
     text-align: center;
     color: #fff;
     padding: 10px 20px;
-    /* max-width: 100px; */
-    margin-bottom: 50px;
+    margin-bottom: 5px;
     border: none;
 }
 

@@ -19,20 +19,20 @@ function ocultarTodo() {
 
 btnBrunch.addEventListener("click", () => {
     ocultarTodo();
-    menuBrunch.style.display = "block";
+    menuBrunch.style.display = "flex";
 });
 
 btnCena.addEventListener("click", () => {
     ocultarTodo();
-    menuCena.style.display = "block";
+    menuCena.style.display = "flex";
 });
 
 btnBebidas.addEventListener("click", () => {
     ocultarTodo();
-    menuBebidas.style.display = "block";
+    menuBebidas.style.display = "flex";
 });
 
 btnPostres.addEventListener("click", () => {
     ocultarTodo();
-    menuPostres.style.display = "block";
+    menuPostres.style.display = "flex";
 });
