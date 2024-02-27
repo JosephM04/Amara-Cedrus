@@ -1,23 +1,36 @@
 .menu-div-btn {
+    position: sticky;
+    top: 0;
+    background-color: #e7feff;
     width:100%;
-    margin: 15px auto ;
     display: grid;
-    gap: 5px;
+    gap: 1px;
     justify-content: center;
+    place-content: center;    
     grid-template-columns:repeat(auto-fit, minmax(100px, 100px));
     z-index: 0;
+    transition: transform .3s ease;
+}
+
+.menu-div-btn.show {
+    transform: translateY(-100%);
 }
 
 .menu-btn {
-    background-color: #03989E;
-    text-align: center;
-    color: #fff;
-    padding: 10px 20px;
-    margin-bottom: 5px;
+    background-color: #e7feff;
     border: none;
+    border-radius: 5px;
+    color:#03989E;
+    text-align: center;
+    padding: 10px 20px;
 }
 
 .menu-btn:hover {
-    background-color: #03a6ac;
+    outline: 1px solid #03989E;
     cursor: pointer;
+}
+
+.active {
+    background-color: #03989E;
+    color: #fdfdfd;
 }

@@ -4,7 +4,8 @@ const whatsappCont = document.querySelector(".ws-confirmar");
 const btnCancel = document.querySelector(".ws-x");
 const btnConfirmar = document.querySelector(".btn-ws-confirmar");
 const loader = document.querySelector(".loader-cont");
-
+const btnGoTop = document.querySelector(".go-top");
+console.log(btnGoTop);
 // loader que desaparecerá cuando carge la primera página
 window.addEventListener("load", () => {
   loader.style.display = "none";
@@ -22,8 +23,13 @@ btnConfirmar.addEventListener("click", () => {
     whatsappCont.classList.remove("ws-cont-show");
 });
 
-
-
-
+window.addEventListener("scroll", function() {
+  const currentScrollPosition = window.scrollY;
+  if(currentScrollPosition > 100) {
+    btnGoTop.classList.add("show");
+  } else {
+    btnGoTop.classList.remove("show");
+  }
+});
 
 
