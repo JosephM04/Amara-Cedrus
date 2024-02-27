@@ -1,0 +1,45 @@
+.nosotros {
+    width: 100%;
+    margin: auto;
+}
+
+.nosotros h1 {
+    margin: 10px;
+    margin-left: 0;
+}
+
+.nosotros p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.bienvenido {
+    width: 70%;
+    max-width: 95vw;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.h2-nosotros {
+    margin: 15px;
+    margin-left: 200px;
+    color: #222;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.p-img {
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 5px;
+    margin: auto;
+
+}
+
+.p-img img{
+    max-width: 50vw;
+}
+

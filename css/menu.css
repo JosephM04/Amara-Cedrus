@@ -4,7 +4,7 @@
     background-color: #e7feff;
     width:100%;
     display: grid;
-    gap: 1px;
+    gap: 2px;
     justify-content: center;
     place-content: center;    
     grid-template-columns:repeat(auto-fit, minmax(100px, 100px));
@@ -22,7 +22,7 @@
     border-radius: 5px;
     color:#03989E;
     text-align: center;
-    padding: 10px 20px;
+    height: 37px;
 }
 
 .menu-btn:hover {

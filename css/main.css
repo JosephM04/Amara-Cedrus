@@ -339,7 +339,7 @@ h2 {
 .img-producto {
     max-height:150px;
     max-width: 220px;
-    border: 1px solid #222;
+    /* border: 1px solid #222; */
     border-radius: 20px;
     overflow: hidden;
 }
