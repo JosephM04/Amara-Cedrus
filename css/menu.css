@@ -34,3 +34,20 @@
     background-color: #03989E;
     color: #fdfdfd;
 }
+
+ul {
+    margin-top: 15px;
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+li {
+    max-width: 350px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
