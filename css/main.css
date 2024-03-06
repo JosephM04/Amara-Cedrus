@@ -15,8 +15,8 @@ h3 {
     font-size: 1.4rem;
     color: #333;
     text-align: center;
-
 }
+
 /* loader */
 
 .loader-cont {
@@ -100,6 +100,7 @@ h2 {
     font-size: 1.6rem;
     margin: 0 5px;
     color: #f2f2f2;
+    
 }
 
 .h1-cont h2 {
@@ -154,6 +155,7 @@ h2 {
     font-weight: bold;
     width: 100%;
 }
+
 .h3-tittles {
     font-size: .9rem;
     font-weight: 700;
@@ -173,17 +175,17 @@ h2 {
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
+    text-align: justify;
 }
 
 /* Slideshow container */
 .slideshow-container {
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     /* box-shadow: 1px 1px 5px #d1d1d1; */
     box-shadow: 1px 1px 5px #222;
-
 }
 
 /* Hide the images by default */
@@ -337,7 +339,7 @@ h2 {
 }
 
 .img-producto {
-    max-height:150px;
+    max-height: 150px;
     max-width: 220px;
     /* border: 1px solid #222; */
     border-radius: 20px;
@@ -514,6 +516,7 @@ h2 {
     box-shadow: 0 0 7px #333;
 
 }
+
 .go-top i {
     margin: 5px;
     padding: 5px;
@@ -553,4 +556,16 @@ h2 {
 .bxl-whatsapp:hover {
     box-shadow: 0 0 7px #0d0;
     cursor: pointer;
+}
+
+@media (min-width: 767px) {
+    .slideshow-container {
+        height: 75vh;
+    }
+}
+
+@media(min-width: 1023px) {
+    .slideshow-container {
+        height: 90vh;
+    }
 }
