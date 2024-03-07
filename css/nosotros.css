@@ -1,45 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .nosotros {
     width: 100%;
     margin: auto;
 }
 
 .nosotros h1 {
-    margin: 10px;
-    margin-left: 0;
+    margin: 10px 0;
 }
 
 .nosotros p {
     font-size: 1rem;
     text-align: justify;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 1rem;
+    margin: 20px auto;
 }
 
 .bienvenido {
-    width: 70%;
-    max-width: 95vw;
+    max-width: 90vw;
     margin: auto;
     margin-bottom: 20px;
     text-align: justify;
 }
 
+
 .h2-nosotros {
-    margin: 15px;
-    margin-left: 200px;
+    margin: 15px 0;
     color: #222;
     font-size: 1.3rem;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 .p-img {
     max-width: 90vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: baseline;
+    justify-content: center;
     gap: 5px;
     margin: auto;
 
 }
 
-.p-img img{
-    max-width: 50vw;
+.p-img img {
+    max-width: 90vw;
 }
 
+@media screen and (min-width:1023px) {
+    .bienvenido {
+        text-align: center;
+    }
+    .bienvenido p {
+        max-width: 800px;
+    }
+    .h2-nosotros {
+        text-align: end;
+    }
+
+    .p-img {
+        max-width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .p-img img{
+        max-width: 50vw;
+    } 
+}

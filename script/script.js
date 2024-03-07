@@ -5,7 +5,7 @@ const btnCancel = document.querySelector(".ws-x");
 const btnConfirmar = document.querySelector(".btn-ws-confirmar");
 const loader = document.querySelector(".loader-cont");
 const btnGoTop = document.querySelector(".go-top");
-console.log(btnGoTop);
+
 // loader que desaparecerá cuando carge la primera página
 window.addEventListener("load", () => {
   loader.style.display = "none";
