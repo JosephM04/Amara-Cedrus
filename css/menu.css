@@ -67,7 +67,7 @@ li {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.45);
     z-index: 1;
-    transition: opacity .5s;
+    transition: opacity .3s;
 }
 
 .image-zoom-div.show {
@@ -88,7 +88,7 @@ li {
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 2px #000;
 }
 

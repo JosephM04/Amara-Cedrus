@@ -74,13 +74,19 @@ window.onscroll = function () {
 
 // al hacer click en la imagen del menu hacer zoom al maximo de la pantalla
 function removeClass() {
-  imagesDiv.classList.remove("show");
 }
 
 images.forEach(image => {
   image.addEventListener("click", () => {
+    // mostrar ventana emergente
     imagesDiv.classList.add("show");
+    // actualizar el src de la imgen de la ventana emergente con el src de la imagen a la que se le ha dado click
     imageDivImg.src = image.currentSrc;
-    imagesDivButton.addEventListener("click", removeClass );
+    // cerrar la ventana emergente cuando se haga click en cualquier lugar excepto en la imagen
+    imagesDiv.addEventListener("click", (event) => {
+      if (event.target !== imageDivImg && !imageDivImg.contains(event.target)) {
+        imagesDiv.classList.remove("show");
+      }
+    });
   });
 });
